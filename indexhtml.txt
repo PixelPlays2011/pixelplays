@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPlays</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: #1a1a2e;
+            color: #fff;
+        }
+        header {
+            background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            color: #e94560;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            color: #e94560;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .section {
+            padding: 2rem;
+        }
+        .shop-item, .gallery-item {
+            margin: 1rem;
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 1rem;
+            text-align: center;
+        }
+        footer {
+            background: #0f0c29;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer a {
+            color: #e94560;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PixelPlays</h1>
+        <nav>
+            <a href="#shop">Shop</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#youtube">YouTube</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to PixelPlays</h2>
+        <p>Your ultimate gaming hub!</p>
+    </div>
+
+    <div id="shop" class="section">
+        <h3>Shop</h3>
+        <div class="shop-item">T-shirt - $20</div>
+        <div class="shop-item">Mug - $10</div>
+        <div class="shop-item">Stickers - $5</div>
+    </div>
+
+    <div id="gallery" class="section">
+        <h3>Gallery</h3>
+        <div class="gallery-item">Photo 1</div>
+        <div class="gallery-item">Photo 2</div>
+        <div class="gallery-item">Photo 3</div>
+    </div>
+
+    <div id="contact" class="section">
+        <h3>Contact Us</h3>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div id="youtube" class="section">
+        <h3>Check Out Our YouTube Channel</h3>
+        <a href="https://www.youtube.com" target="_blank">Subscribe Now</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PixelPlays | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
